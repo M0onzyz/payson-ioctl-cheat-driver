@@ -382,7 +382,6 @@ NTSTATUS initialize_driver(PDRIVER_OBJECT drv_obj, PUNICODE_STRING path) {
 	NTSTATUS status = STATUS_SUCCESS;
 	PDEVICE_OBJECT device_obj = NULL;
 
-	UNICODE_STRING name, link;
 	RtlInitUnicodeString(&name, L"\\Device\\paysoniscoolio"); // driver name
 	RtlInitUnicodeString(&link, L"\\DosDevices\\paysoniscoolio"); // driver name
 
